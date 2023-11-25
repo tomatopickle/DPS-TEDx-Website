@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Lato:wght@300;400;700&display=swap");
+
+html,
+body {
+  background-color: black;
+  color: white;
+  font-family: "Lato", sans-serif;
+}
+.spacer {
+  width: 100%;
+}
+nav {
+  display: flex;
+  margin: 30px;
+  height: 10%;
+}
+nav img {
+  width: 25%;
+}
+nav #navLinks {
+  width: 60%;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+#navLinks a {
+  margin-inline: 15px;
+  position: relative;
+}
+a:not(.button)::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #eb0028;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+a:not(.button):hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+a:not(.button):active {
+  opacity: 0.5;
+}
+#mainContent {
+  height: 90%;
+  display: block;
+  margin: auto;
+  padding: 10%;
+  padding-block: 6%;
+  display: flex;
+  align-items: center;
+}
+#mainContentText {
+  width: 140vw;
+}
+#mainContentText p {
+  opacity: 0.7;
+}
+.button {
+  border: 1px solid #ff290a;
+  color: #ff290a;
+  border-radius: 100px;
+  padding: 15px;
+  transition: 0.3s all ease-in-out;
+}
+.button:hover {
+  border: 1px solid #eb0028;
+  background-color: #eb0028;
+  color: white;
+}
+.button:active {
+  opacity: 0.7;
+}
