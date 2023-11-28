@@ -1,0 +1,13 @@
+p {
+  text-align: left;
+  line-height: 1.5em;
+  font-size: 16px;
+}
+#mainContent{
+    padding: 7%;
+    padding-block: 4%;
+}
+#mainContentText{
+    width: max-content;
+    margin-right: 15px;
+}
