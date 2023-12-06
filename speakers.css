@@ -19,12 +19,34 @@ img.fit {
 .card p {
   opacity: 0.8;
 }
-.card{
+.card {
   padding: 5px;
 }
 .cards .spacer {
   width: 18%;
 }
-.card:hover{
+.card:hover {
   background-color: rgb(16, 16, 16);
+}
+#cardsMobile {
+  display: none;
+}
+#cardsMobile .card {
+  margin-block: 30px;
+  background-color: rgb(16, 16, 16);
+}
+@media only screen and (max-width: 600px) {
+  section {
+    display: none;
+  }
+  #cardsMobile {
+    display: block;
+  }
+  #cardsMobile img,
+  #mainContent #cardsMobile .card p {
+    display: unset;
+  }
+  ul {
+    padding: 0;
+  }
 }

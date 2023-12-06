@@ -187,9 +187,7 @@ a:not(.button):active {
   /* Make sure that all arrows are pointing leftwards */
   .container::before {
     left: 60px;
-    border: medium solid white;
     border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
   }
 
   /* Make sure all circles are at the same spot */
@@ -201,5 +199,39 @@ a:not(.button):active {
   /* Make all container containers behave like the left ones */
   .container {
     left: 0%;
+  }
+}
+#pMobile {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  #mainContent img {
+    display: none;
+  }
+  #mainContent p:not(#pMobile){
+    display: none;
+  }
+  #mainContent .spacer{
+    display: none;
+  }
+  .container{
+    width: 75vw;
+  }
+  iframe {
+    width: 100%;
+  }
+  #pMobile {
+    display: block;
+  }
+  .container img {
+    width: 100%;
+  }
+  #timeline {
+    padding: 0;
+    padding-block: 0;
+  }
+  #timeline h1 {
+    margin-left: 20px;
+    margin-top: 50px;
   }
 }
