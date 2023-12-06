@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>TEDx Youth DPSMIS</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='speakers.css'>
+    <script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+"></script>
+    <link href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="app">
+        <nav>
+            <img src="./assets/tedxMainLogo.png" alt="TEDx Logo">
+            <div class="spacer"></div>
+            <div id="navLinks">
+                <a href="./">Home</a>
+                <a href="./about_us.html">About Us</a>
+                <a href="https://rb.gy/nhrptb" target="_blank">Team</a>
+            </div>
+        </nav>
+        <div id="mainContent">
+            <section class="splide" aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="card">
+                                <img src="./assets/speakerPhotos/speaker_1.jpeg" alt="Speaker 1" srcset="">
+                                <h2>Asmaa Al-Kuwari</h2>
+                                <p>Life & Executive Coach, Entrepreneur, & Digital Humanist
+
+                                </p>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="card">
+                                <img src="./assets/speakerPhotos/speaker_2.jpeg" alt="Speaker 2" srcset="">
+                                <h2>Syed Hamad Abbas</h2>
+                                <p>Sales Program Officer, Qatar Airways, & Alumnus, DPS
+                                    Modern Indian School
+                                </p>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="card">
+                                <img class="fit" height="148" src="./assets/speakerPhotos/speaker_3.jpeg"
+                                    alt="Speaker 3" srcset="">
+                                <h2>Conchita Ponce</h2>
+                                <p>Founder, Doha Women Forum & Solopreneur
+                                </p>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="card">
+                                <img class="fit" src="./assets/speakerPhotos/speaker_4.jpeg" alt="Speaker 4" srcset="">
+                                <h2>Abdul Nasser</h2>
+                                <p>Senior Finance Professional; Mountaineer; & Author
+                                </p>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="card">
+                                <img src="./assets/speakerPhotos/speaker_5.jpeg" alt="Speaker 4" srcset="">
+                                <h2>Azhar Jaleel Muhammed</h2>
+                                <p>President Student Council, DPS Modern Indian School
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <script>
+            new Splide('.splide', {
+                type: 'loop',
+                perPage: 3,
+                gap: '25px',
+                autoplay: true,
+                wheel: true,
+                interval: 5000,
+                pagination: false
+            }).mount();
+
+        </script>
+</body>
+
+</html>
